@@ -12,3 +12,23 @@ data class InputFormModel(
     val backgroundHexColor: String?,
     val backgroundImageId: Long?
 )
+
+/**
+ * Mock data.
+ */
+object InputFormModelConst {
+
+    val inputModelName = InputModel(id = null, title = "Name", placeholder = "Your name")
+
+    val inputModelAge = InputModel(id = null, title = "Age", placeholder = "Your age")
+
+    val inputFormModel = InputFormModel(
+        id = null,
+        inputs = listOf(inputModelName, inputModelAge),
+        submitButtonLabel = "Submit",
+        fontSize = null,
+        fontHexColor = null,
+        backgroundHexColor = null,
+        backgroundImageId = null
+    )
+}
